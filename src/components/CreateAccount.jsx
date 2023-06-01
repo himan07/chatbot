@@ -3,29 +3,27 @@ import "../assets/css/LoginPage.css";
 import { Button, TextField } from "@mui/material";
 
 const CreateAccount = (props) => {
-    const [email, setEmail] = useState([]);
-    const [password, setPassword] = useState([]);
+  const [email, setEmail] = useState([]);
+  const [password, setPassword] = useState([]);
+
+  useEffect(() => {
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+  }, [email, password]);
+
+  const handleChangeEmail = (event) => {
+    let emaiValue = event.target.value;
+    setEmail(emaiValue);
+    localStorage.setItem("email", emaiValue);
+  };
 
 
-    useEffect(() => {
-        localStorage.setItem("email", email);
-        localStorage.setItem("password", password);
-    }, [email, password]);
-
-
-    const handleChangeEmail = (event) => {
-        let emaiValue = event.target.value
-        setEmail(emaiValue)
-        localStorage.setItem("email", emaiValue);
-    };
+  const handleSubmit = () => {
+    props.dataFromCreateAccount(email, password);
+  };
 
     const handleChangePassword = (event) => {
         setPassword(event.target.value);
-    };
-
-
-    const handleSubmit = () => {
-        props.dataFromCreateAccount(email, password);
     };
 
     return (
@@ -66,7 +64,10 @@ const CreateAccount = (props) => {
                 Create Account
             </Button>
         </div>
-    );
+
+    
+    
+  );
 };
 
 export default CreateAccount;
