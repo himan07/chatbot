@@ -55,18 +55,6 @@ const CreateAccount = (props) => {
                         onChange={handleChangePassword}
                         type="password"
                     />
-                    <TextField
-                        variant="outlined"
-                        fullWidth
-                        label="Enter your age"
-                        style={{ marginTop: "20px" }}
-                    />
-                    <TextField
-                        variant="outlined"
-                        fullWidth
-                        label="Enter your Address"
-                        style={{ marginTop: "20px" }}
-                    />
                 </div>
             </div>
             <Button

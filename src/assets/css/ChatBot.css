@@ -1,5 +1,6 @@
 body {
   background-color: #ddd;
+  padding: 10px;
 }
 
 .container {
@@ -9,13 +10,11 @@ body {
   height: 100vh;
 }
 
-
-
 .chat_boat {
   background-color: #f2f2f7;
   border: 5px solid #ddd;
-  width: 375px;
-  height: 600px;
+  width: 25vw;
+  height: calc(100vh - 20px);
   border-radius: 40px;
   margin: 0 auto;
   overflow: hidden;
@@ -29,22 +28,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
-  top: 71%;
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  margin-left: 20px;
+  margin-bottom: 3px;
 }
 
 .input_text {
   padding: 10px;
-  width: 80%;
+  width: 100%;
   border: 2px solid #ddd;
   border-radius: 20px;
 }
 
-.chatbot_text{
+.chatbot_text {
   display: flex;
   justify-content: flex-start;
   position: fixed;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: #058376;
   font-size: 13px;
 }

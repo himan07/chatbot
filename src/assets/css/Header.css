@@ -1,28 +1,26 @@
 .header {
+  height: 100px;
+  background-color: #354c64;
   position: relative;
-  height: 100px; 
-  background-color: #009788; 
-  top: -32px;
-
+  top: -33px;
 }
 
 .notch {
-    position: absolute;
-    bottom: 69.2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px; 
-    height: 30px; 
-    background-color: #f2f2f7; 
-    border-bottom-left-radius: 50px; 
-    border-bottom-right-radius: 50px; 
-  }
+  position: absolute;
+  bottom: 69.2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 30px;
+  background-color: #f2f2f7;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
 
-  .chat_bot_text{
-    position: relative;
-    top: 3rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #ddd;
-  }
-
+.chat_bot_text {
+  position: relative;
+  top: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ddd;
+}

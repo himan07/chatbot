@@ -3,7 +3,7 @@ import ChatBot from "./components/ChatBot";
 import LoginPage from "./components/LoginPage";
 
 function App() {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
   return <div className="App">{login ? <ChatBot /> : <LoginPage />}</div>;
 }
 
