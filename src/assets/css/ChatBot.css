@@ -1,7 +1,5 @@
 body {
   padding: 10px;
-  background: url("")
-  
 }
 .container {
   display: flex;
@@ -48,4 +46,8 @@ body {
   /* margin-left: 10px; */
   color: #058376;
   font-size: 13px;
+}
+
+#videoBackground {
+  width: 100vw;
 }
