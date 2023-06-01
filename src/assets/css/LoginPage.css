@@ -1,0 +1,26 @@
+.loginpage_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.not_account {
+    position: relative;
+    top: 3.5rem;
+}
+
+.account_create_content {
+    display: grid;
+    margin-top: -25px;
+}
+
+#create_button {
+    background-color: #354c64 !important;
+    text-transform: capitalize !important;
+    position: relative;
+    margin-bottom: 2rem !important;
+    margin-top: 1rem !important;
+    float: right !important;
+}
