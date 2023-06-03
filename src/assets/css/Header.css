@@ -1,6 +1,6 @@
 .header {
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.719);
+  background-color: hsl(256, 97%, 71%);
   position: relative;
   top: -33px;
 }
@@ -22,5 +22,5 @@
   top: 3rem;
   text-align: center;
   font-size: 1.5rem;
-  color: #ddd;
+  color: white;
 }
